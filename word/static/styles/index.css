@@ -1,0 +1,37 @@
+body {
+    background: #333;
+}
+ul, li {
+    list-style: none;
+    margin-left: -20px;
+}
+
+.main {
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: #f3f3f3;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+}
+
+.word {
+    color: #006985;
+    font-size: 50px;
+}
+
+.word-options ul li {
+    line-height: 1.5em;
+    display: block;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 5px;
+    border-bottom: 1px #d2d2d2 solid;
+}
+
+.word-options ul li:hover {
+    color: #FFF;
+    cursor: pointer;
+    background: #0a5e72;
+}
