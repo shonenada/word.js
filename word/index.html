@@ -1,23 +1,29 @@
 <!doctype html>
 <html ng-app>
     <head>
-        <script src="static/components/angular/angular.js"></script>
+        <meta charset="utf-8">
+        <title>Word.js</title>
         <link rel="stylesheet" href="static/styles/index.css">
     </head>
     <body>
-        <div class="main">
+        <div class="main" ng-controller="WordController" ng-init="init()">
             <div class="word">
-                {{ 'republican' }}
+                {{ word.word }}
             </div>
 
             <div class="word-options">
-                <ul>
-                    <li>{{ 'a.共和国的' }}</li>
-                    <li>{{ 'a.确定的;肯定的' }}</li>
-                    <li>{{ 'a.透明的;易识破的' }}</li>
-                    <li>{{ 'a.清白的;幼稚的' }}</li>
+                <ul ng-repeat="w in word.options">
+                    <li ng-click="check($index)">{{ w }}</li>
                 </ul>
             </div>
+
+            <div class="tips">
+                正确：<span class="tips-text tips-right">{{ right }}</span>
+                错误：<span class="tips-text tips-wrong">{{ wrong }}</span>
+                总共：<span class="tips-text tips-total">{{ total }}</span>
+            </div>
         </div>
+        <script src="static/components/angular/angular.js"></script>
+        <script src="static/scripts/word.js"></script>
     </body>
 </html>
