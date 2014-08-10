@@ -1,29 +1,15 @@
 <!doctype html>
-<html ng-app>
+<html>
     <head>
         <meta charset="utf-8">
         <title>Word.js</title>
+        <script src="static/components/angular/angular.js"></script>
+        <script src="static/components/angular-route/angular-route.js"></script>
+        <script src="static/scripts/app.js"></script>
+        <script src="static/scripts/controller.js"></script>
         <link rel="stylesheet" href="static/styles/index.css">
     </head>
-    <body>
-        <div class="main" ng-controller="WordController" ng-init="init()">
-            <div class="word">
-                {{ word.word }}
-            </div>
-
-            <div class="word-options">
-                <ul ng-repeat="w in word.options">
-                    <li ng-click="check($index)">{{ w }}</li>
-                </ul>
-            </div>
-
-            <div class="tips">
-                正确：<span class="tips-text tips-right">{{ right }}</span>
-                错误：<span class="tips-text tips-wrong">{{ wrong }}</span>
-                总共：<span class="tips-text tips-total">{{ total }}</span>
-            </div>
-        </div>
-        <script src="static/components/angular/angular.js"></script>
-        <script src="static/scripts/word.js"></script>
+    <body ng-app="wordApp">
+        <div ng-view></div>
     </body>
 </html>

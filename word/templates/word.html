@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="word">
+        {{ word.word }}
+    </div>
+
+    <div class="word-options">
+        <ul ng-repeat="w in word.options">
+            <li ng-click="check($index)">{{ w }}</li>
+        </ul>
+    </div>
+
+    <div class="tips">
+        正确：<span class="tips-text tips-right">{{ statistics.right }}</span>
+        错误：<span class="tips-text tips-wrong">{{ statistics.wrong }}</span>
+        总共：<span class="tips-text tips-total">{{ statistics.total }}</span>
+    </div>
+</div>

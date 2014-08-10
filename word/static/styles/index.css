@@ -54,3 +54,7 @@ ul, li {
 .tips-wrong {
     color: #FF0000;
 }
+
+.finished {
+    line-height: 1.5em;
+}
