@@ -1,0 +1,25 @@
+{
+  "name": "word.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/shonenada/word.js",
+  "authors": [
+    "shonenada <shonenada@gmail.com>"
+  ],
+  "description": "Demo of angularjs",
+  "keywords": [
+    "angularjs",
+    "word"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "word/static/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.2.21"
+  }
+}
